@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Registros proyecto</title>
+    <link rel="stylesheet" href="estilo.css">
+
+
+</head>
+<body> 
+
+<div class="container-form">
+<div class="informacion">
+<div class="info-childs">
+  <h2>Bienvenido</h2>
+    <p>Inicia sesion para comenzar.</p>
+     <button id="sign-in">Iniciar</button>
+</div>
+</div>
+   <div class="form-informacion">
+    <div class="form-information-childs">
+        <h2>Crea tu cuenta</h2>
+            <div class="icons">
+                <i class='bx bxl-discord-alt' ></i>
+                <i class='bx bxs-ghost'></i>
+                <i class='bx bxl-facebook-circle' ></i>
+            </div>
+
+        <p>Usa tu email para registrarse</p>
+            <form class="form">
+                <label>
+                <i class='bx bxs-hand-right' ></i>
+                <input type="text" placeholder="Nombre Completo">
+                </label>
+                <label>
+                <i class='bx bx-happy-heart-eyes' ></i>
+               <input type="email" placeholder="Correo Electronico">
+            </label>
+                <label>
+                <i class='bx bx-user' ></i>
+                <input type="password" placeholder="Contraseña">
+                </label>
+                <button id="sign-ip">Registrarse</button>
+            </input>
+            </form>
+            </div>
+        </div> 
+
+    </div>
+
+    <script>
+    btnSignIn.addEventListener("click", () => {
+        formRegistro.style.display = "none";  
+        formLogin.style.display = "block";     
+    });
+    
+    btnSignUp.addEventListener("click", () => {
+        formRegistro.style.display = "block";   
+        formLogin.style.display = "none";      
+    });
+    
+    
+    function registrarUsuario() {
+        console.log("Usuario registrado exitosamente!");
+    }</script>
+     
+        
+        </body>
+        
+        </html>
